@@ -1,0 +1,65 @@
+.alchemy-icon {
+    background-image: url("/assets/img/alchemy-icons.png");
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+    top: 5px;
+    margin-right: 8px;
+}
+
+.glass {
+    background-position: -35px -105px;
+    width: 26px;
+    height: 16px;
+}
+
+.phial-mold-clay {
+    background-position: -71px -102px;
+    width: 18px;
+    height: 22px;
+    top: 2px;
+}
+
+.phial-mold-pottery {
+    background-position: -103px -102px;
+    width: 18px;
+    height: 22px;
+    top: 2px;
+}
+
+.glass-phial {
+    background-position: -136px -97px;
+    width: 17px;
+    height: 30px;
+    top: 0;
+}
+
+.pink-mixture {
+    background-position: -161px -101px;
+    width: 30px;
+    height: 22px;
+}
+
+.purple-mixture {
+    background-position: -193px -101px;
+    width: 30px;
+    height: 22px;
+}
+
+.red-mixture {
+    background-position: -225px -101px;
+    width: 30px;
+    height: 22px;
+}
+
+.blue-mixture {
+    background-position: -257px -101px;
+    width: 30px;
+    height: 22px;
+}
+
+.yellow-mixture {
+    background-position: -289px -101px;
+    width: 30px;
+    height: 22px;
+}

@@ -9,11 +9,13 @@ import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { ModListComponent } from './components/mod-list/mod-list.component';
+import { AlchemyComponent } from './components/alchemy/alchemy.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',             component: ComponentsComponent },
     { path: 'mods',             component: ModListComponent },
+    { path: 'alchemy',          component: AlchemyComponent},
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },

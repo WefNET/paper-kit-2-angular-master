@@ -15,6 +15,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { ModListComponent } from './mod-list/mod-list.component';
+import { AlchemyComponent } from './alchemy/alchemy.component';
 
 @NgModule({
     imports: [
@@ -34,7 +35,8 @@ import { ModListComponent } from './mod-list/mod-list.component';
         NotificationComponent,
         NgbdModalComponent,
         NgbdModalContent,
-        ModListComponent
+        ModListComponent,
+        AlchemyComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
