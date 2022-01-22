@@ -16,6 +16,7 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { ModListComponent } from './mod-list/mod-list.component';
 import { AlchemyComponent } from './alchemy/alchemy.component';
+import { BuildingBountiesComponent } from './building-bounties/building-bounties.component';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { AlchemyComponent } from './alchemy/alchemy.component';
         NgbdModalComponent,
         NgbdModalContent,
         ModListComponent,
-        AlchemyComponent
+        AlchemyComponent,
+        BuildingBountiesComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

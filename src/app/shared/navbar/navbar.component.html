@@ -1,93 +1,46 @@
-<nav
-  class="navbar navbar-expand-lg fixed-top navbar-transparent"
-  color-on-scroll="500"
->
-  <div class="container">
-    <div class="navbar-translate">
-      <a class="navbar-brand" href="#">Guardians of Wurm</a>
-      <button
-        class="navbar-toggler navbar-burger"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarToggler"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        (click)="sidebarToggle()"
-      >
-        <span class="navbar-toggler-bar"></span>
-        <span class="navbar-toggler-bar"></span>
-        <span class="navbar-toggler-bar"></span>
-      </button>
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#">Guardians of Wurm</a>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+              <span class="navbar-toggler-bar">Poop</span>
+              <span class="navbar-toggler-bar"></span>
+              <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Fandango: Our main map" data-placement="bottom" href="https://fandango.guardiansofwurm.com" target="_blank">
+                        <i class="fas fa-map-marked-alt" style="color: #038CA5"></i>
+                        <p class="d-lg-none">Fandango</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Wurm Unlimited on Steam" data-placement="bottom" href="https://store.steampowered.com/app/366220/Wurm_Unlimited/" target="_blank">
+                        <i class="fab fa-steam" style="color: #BDC1DC"></i>
+                        <p class="d-lg-none">Wurm Unlimited</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Our Discord" data-placement="bottom" href="https://discord.gg/fRpp9Fd8Wa" target="_blank">
+                        <i class="fab fa-discord" style="color: #F8CD07"></i>
+                        <p class="d-lg-none">Discord</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Information about Setup & Mods" data-placement="bottom" href="#/mods">
+                        <i class="fas fa-info-circle" style="color: #EE9C37"></i>
+                        <p class="d-lg-none">Information about Setup & Mods</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Vote for our Server!" data-placement="bottom" href="https://wurm-unlimited.com/server/10403/">
+                        <i class="fas fa-vote-yea" style="color: #BBD189"></i>
+                        <p class="d-lg-none">Vote!</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="navbar-collapse" id="navbarToggler">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item" *ngIf="!isDocumentation()">
-          <a
-            class="nav-link"
-            rel="tooltip"
-            title="Fandango: Our main map"
-            data-placement="bottom"
-            href="https://fandango.guardiansofwurm.com"
-            target="_blank"
-          >
-            <i class="fas fa-map-marked-alt" style="color: #038CA5"></i>
-            <p class="d-lg-none">Fandango</p>
-          </a>
-        </li>
-        <li class="nav-item" *ngIf="!isDocumentation()">
-          <a
-            class="nav-link"
-            rel="tooltip"
-            title="Wurm Unlimited on Steam"
-            data-placement="bottom"
-            href="https://store.steampowered.com/app/366220/Wurm_Unlimited/"
-            target="_blank"
-          >
-            <i class="fab fa-steam" style="color: #BDC1DC"></i>
-            <p class="d-lg-none">Wurm Unlimited</p>
-          </a>
-        </li>
-        <li class="nav-item" *ngIf="!isDocumentation()">
-          <a
-            class="nav-link"
-            rel="tooltip"
-            title="Our Discord"
-            data-placement="bottom"
-            href="https://discord.gg/fRpp9Fd8Wa"
-            target="_blank"
-          >
-            <i class="fab fa-discord" style="color: #F8CD07"></i>
-            <p class="d-lg-none">Discord</p>
-          </a>
-        </li>
-        <li class="nav-item" *ngIf="!isDocumentation()">
-          <a
-            class="nav-link"
-            rel="tooltip"
-            title="Information about Setup & Mods"
-            data-placement="bottom"
-            href="#/mods"
-          >
-            <i class="fas fa-info-circle" style="color: #EE9C37"></i>
-            <p class="d-lg-none">Information about Setup & Mods</p>
-          </a>
-        </li>
-
-        
-        <li class="nav-item" *ngIf="!isDocumentation()">
-          <a
-            class="nav-link"
-            rel="tooltip"
-            title="Vote for our Server!"
-            data-placement="bottom"
-            href="https://wurm-unlimited.com/server/10403/"
-          >
-          <i class="fas fa-vote-yea" style="color: #BBD189"></i>
-            <p class="d-lg-none">Vote!</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </nav>
