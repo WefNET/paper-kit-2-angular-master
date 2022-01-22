@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { SheetsService } from './sheets-service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,8 +29,11 @@ import { ExamplesModule } from './examples/examples.module';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    SheetsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

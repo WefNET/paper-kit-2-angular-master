@@ -40,6 +40,21 @@
                     <p style="margin-top: 20px;">
                         Submit you reward requests via a GM ticket (in-game /support).
                     </p>
+
+                    <table class="towers">
+                        <thead>
+                            <td>Coords</td>
+                            <td>Builder</td>
+                            <td>Paid</td>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let tower of towers">
+                                <td>{{tower[0]}}</td>
+                                <td>{{tower[1]}}</td>
+                                <td>{{tower[2]}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="col-md-3">
                     &nbsp;
